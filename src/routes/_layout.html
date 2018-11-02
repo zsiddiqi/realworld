@@ -4,12 +4,18 @@
 	<svelte:component this={child.component} {...child.props}/>
 </main>
 
+<footer>
+	<Footer/>
+</footer>
+
 <script>
 	import Nav from '../routes/_components/Nav.html';
+	import Footer from '../routes/_components/Footer.html';
 
 	export default {
 		components: {
-			Nav
+			Nav,
+			Footer
 		}
 	};
 </script>
